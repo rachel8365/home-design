@@ -1,38 +1,116 @@
 .App {
   text-align: center;
+  background-color: rgb(251, 244, 236);
+  color: #846D62;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image-container {
+  position: relative;
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.image-container img {
+  transition: filter 0.5s;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.App-link {
-  color: #61dafb;
+.image-container:hover img {
+  filter: grayscale(100%);
+  transform: scale(1.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.images img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.images:hover img {
+  transform: scale(1.1);
+}
+
+.title {
+  background-color: rgb(239, 204, 164);
+}
+
+.amount {
+  font-size: 2rem;
+  border: 1 solid;
+}
+
+.cart {
+  font-size: 150px;
+}
+
+.cartText {
+  font-size: 50px;
+}
+
+.backGround {
+  position: relative;
+  line-height: 1.8;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.aboutStyle p {
+  color: #12181b;
+}
+
+.search {
+  width: 300px;
+}
+
+.footerStyle {
+  background-color: #4e3e37;
+  text-align: right;
+  width: 100%;
+  padding: 20px;
+}
+
+.footer1 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footerImg {
+  width: 180px;
+  height: 120px;
+  margin-top: 30px;
+}
+
+.navbar-nav a.nav-link {
+  color: #4e3e37;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-nav a.nav-link:hover {
+  color: #A8A29C;
+}
+
+.navbar-nav a.nav-link.active {
+  color: #cd5521;
+}
+
+.selector {
+  width: 7.5rem;
+}
+
+.category {
+  background-color: #A8A29C;
+  color: #fff;
+}
+
+.mt-2 {
+  margin-top: 4rem !important;
+}
+
+.imageCategory {
+  margin-top: 1rem;
 }
