@@ -19,7 +19,9 @@ To run the site, open a new terminal and enter the client folder by running the 
 
 ## Environment Variables
 PORT = 8006
+
 DB = appears in the submission box
+
 jwtKey = appears in the submission box
 
 A fun test!
