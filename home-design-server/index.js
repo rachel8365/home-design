@@ -6,6 +6,7 @@ const login = require("./routes/login")
 const users = require("./routes/users")
 const products = require("./routes/products")
 const carts = require("./routes/carts")
+const morgan = require("morgan")
 
 
 const cors = require("cors")
@@ -21,6 +22,7 @@ mongoose
 
 app.use(express.json());
 app.use(cors());
+app.use(morgan('combined'))
 app.use("/api/register", register)
 app.use("/api/login", login)
 app.use("/api/users", users)
